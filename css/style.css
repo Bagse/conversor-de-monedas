@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root {
+    --color-principal: #293241;
+    --color-secundario: #e0fbfc;
+    --color-terciario: #ffc300;
+    --color-texto: #ee6c4d;
+    --color-texto-sec: #98c1d9;
+}
+body{
+    background: var(--color-principal);
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr,100%));
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.conversor-img{
+    width: 14rem;
+    max-width: 100%;
+}
+
+.titulo{
+    color: var(--color-texto);
+    padding-top: 1.75rem;
+}
+
+.subtitulo{
+    color: var(--color-texto-sec);
+    padding-bottom: 1.75rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr,100%));
+    justify-items: start;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    gap: 1rem;
+}
+
+.inp-general{
+    width: 13rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    text-align: right;
+    padding-right: .8rem;
+    border-radius: 7px;
+}
+
+.moneda-opt{
+    border-radius: 7px;
+    height: 3rem;
+    font-size: 1rem;
+    width: 3.5rem;
+    cursor: pointer;
+}
+
+.cambio{
+    display: grid;
+    color: #fff;
+    justify-content: end;
+    margin-top: -1.5rem;
+}
+
+.btn{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr,100%));
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    width: 5rem;
+    border-radius: 7px;
+    border: 2px solid;
+    color: var(--color-secundario);
+    background: #000;
+    cursor: pointer;
+}
+
+select:focus, input:focus, button:focus{
+    outline: 0;
+}
+
+
+
+/*Tablet*/
+@media screen  and (min-width: 480px) and (max-width: 767px) {
+    .inp-general{
+        width: 18rem;
+    }
+    .moneda-opt{
+        width: 3.5rem;
+        font-size: 1.1rem;
+    }
+}   
+
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 2000px) {
+    .inp-general{
+        width: 20rem;
+    }
+    .moneda-opt{
+        width: 4rem;
+        font-size: 1.1rem;
+    }
+}
