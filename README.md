@@ -2,4 +2,6 @@
 
 link: https://bagse.github.io/conversor-de-monedas/
 
-# conversor-de-monedas
+# Conversor de monedas
+
+Página creda usando un API para la obtención del valor de las monedas que uno busca.
