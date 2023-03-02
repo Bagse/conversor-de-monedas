@@ -113,7 +113,7 @@ select:focus, input:focus, button:focus{
         width: 20rem;
     }
     .moneda-opt{
-        width: 4rem;
+        width: 14rem;
         font-size: 1.1rem;
     }
 }
